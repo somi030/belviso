@@ -1,0 +1,28 @@
+.sales {
+  background-color: #f1f1f1;
+  padding: 80px 0 100px;
+  text-align: center;
+
+  &__description {
+    margin-top: 60px;
+    line-height: 1.8;
+  }
+
+  &__sale-image {
+    height: 237px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__sales {
+    margin-top: 51px;
+  }
+
+  &__sale-title {
+    background-color: #ba1c68;
+    color: #fff;
+    padding: 20px 5px;
+    text-align: center;
+    font-size: 22px;
+  }
+}

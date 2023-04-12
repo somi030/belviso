@@ -1,0 +1,54 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-weight: normal;
+  line-height: 1;
+  @include box-sizing(border-box);
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  outline: transparent;
+}
+
+.gform_ajax_spinner,
+.gform_validation_errors {
+  display: none;
+}
+
+.relative {
+  position: relative;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+button {
+  border: none;
+  background: transparent;
+}
+
+.main {
+  position: relative;
+  // padding-top: 135px;
+  // min-height: calc(100vh - 415px);
+}
+
+button,
+input[type="submit"] {
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+}

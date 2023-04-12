@@ -1,0 +1,28 @@
+.footer {
+  background-color: #ba1c68;
+  padding: 65px 0;
+
+  &__left {
+    color: #fff;
+    height: 100%;
+  }
+
+  &__logo {
+    width: 300px;
+  }
+
+  &__contact {
+    font-size: 20px;
+    line-height: 1.8;
+  }
+
+  &__map {
+    height: 452px;
+  }
+
+  &__social-media {
+    svg {
+      margin-right: 15px;
+    }
+  }
+}

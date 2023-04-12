@@ -1,0 +1,152 @@
+// TO DELETE
+#menu-main-menu li a[href="#"] {
+  opacity: 0.3;
+}
+.sub-menu {
+  display: none;
+}
+
+.header {
+  padding: 26px 0;
+  background-color: #fff;
+
+  &__logo {
+    width: 205px;
+  }
+
+  &__social-media {
+    margin-top: 10px;
+    text-align: right;
+
+    svg {
+      margin-left: 15px;
+
+      path {
+        stroke: #ba1c68;
+      }
+    }
+  }
+
+  &__navigation {
+    margin-top: 20px;
+
+    #menu-main-menu {
+      padding-left: 0;
+      margin: 0;
+      display: flex;
+      list-style: none;
+      justify-content: flex-end;
+    }
+
+    li a {
+      position: relative;
+      display: inline-block;
+      margin-left: 30px;
+      color: #000;
+      font-weight: 500;
+
+      &::before {
+        content: "";
+        width: 100%;
+        height: 4px;
+        background: #ba1c68;
+        position: absolute;
+        bottom: -5px;
+        transform-origin: right top;
+        transition: transform 0.3s ease("fluid"), opacity 0.4s ease("fluid");
+        transform: scaleX(0);
+        opacity: 0;
+      }
+
+      &:hover {
+        &::before {
+          opacity: 1;
+          transform: scaleY(1);
+          transform-origin: left top;
+        }
+      }
+    }
+
+    li:first-child a {
+      margin-left: 0;
+    }
+  }
+}
+
+.header-fixed {
+  background-color: #ba1c68;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 0;
+  z-index: 100;
+  transition: transform 0.3s ease("fluid");
+  transform: translateY(-100%);
+
+  &__logo {
+    svg g {
+      opacity: 1;
+    }
+
+    svg path {
+      fill: #fff;
+    }
+  }
+
+  &.open {
+    transform: translateY(0);
+  }
+
+  &__navigation {
+    height: 100%;
+
+    .menu-main-menu-container {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    #menu-main-menu-1 {
+      padding-left: 0;
+      margin: 0;
+      display: flex;
+      list-style: none;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    li a {
+      position: relative;
+      display: inline-block;
+      margin-left: 30px;
+      color: #fff;
+      font-weight: 500;
+
+      &::before {
+        content: "";
+        width: 100%;
+        height: 4px;
+        background: #fff;
+        position: absolute;
+        bottom: -5px;
+        transform-origin: right top;
+        transition: transform 0.3s ease("fluid"), opacity 0.4s ease("fluid");
+        transform: scaleX(0);
+        opacity: 0;
+      }
+
+      &:hover {
+        &::before {
+          opacity: 1;
+          transform: scaleY(1);
+          transform-origin: left top;
+        }
+      }
+    }
+
+    li:first-child a {
+      margin-left: 0;
+    }
+  }
+}

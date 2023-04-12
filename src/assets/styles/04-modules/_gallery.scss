@@ -1,0 +1,32 @@
+.gallery {
+  $el: &;
+  padding: 130px 0;
+
+  &__image-container {
+    cursor: pointer;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 23px;
+
+    &:hover {
+      #{$el}__image {
+        transform: scale(1.2);
+      }
+    }
+
+    &.count-1 {
+      height: 446px;
+    }
+
+    &.count-2 {
+      height: 212px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease("fluid");
+  }
+}

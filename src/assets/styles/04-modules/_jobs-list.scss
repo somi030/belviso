@@ -1,0 +1,59 @@
+.jobs-list {
+  &__job {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
+    border-radius: 4px;
+    height: 209px;
+    overflow: hidden;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__job-image {
+    height: 100%;
+    min-width: 366px;
+    width: 366px;
+    object-fit: cover;
+  }
+
+  &__job-info {
+    padding: 18px 34px 0;
+    width: 100%;
+  }
+
+  &__job-header {
+    width: 100%;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #c4c4c4;
+  }
+
+  &__job-name {
+    font-size: 26px;
+    font-weight: 600;
+    color: #68103a;
+  }
+
+  &__job-contact {
+    margin-top: 31px;
+  }
+
+  &__job-cv {
+    font-size: 21px;
+    margin-bottom: 30px;
+
+    a {
+      font-weight: 700;
+      color: #ba1c68;
+    }
+  }
+
+  &__job-find-us {
+    font-size: 17px;
+
+    a {
+      color: #ba1c68;
+    }
+  }
+}

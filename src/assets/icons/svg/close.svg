@@ -1,0 +1,4 @@
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="3" y="1" width="66" height="3" transform="rotate(45 3 1)" fill="black"/>
+<rect x="50" y="3" width="66" height="3" transform="rotate(135 50 3)" fill="black"/>
+</svg>

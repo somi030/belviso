@@ -1,0 +1,79 @@
+body {
+  color: #181818;
+}
+
+.emblem {
+  margin: 8px 0;
+}
+
+.subtitle {
+  font-size: 40px;
+  font-family: "Imperial Script", sans-serif;
+  color: #ba1c68;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  // margin: 20px 0;
+  margin: 0;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button {
+  display: inline-block;
+  color: #fff;
+  font-weight: 600;
+  border: 1px solid #fff;
+  padding: 12px 21px;
+  border-radius: 50px;
+  cursor: pointer;
+
+  &-fill {
+    @extend .button;
+    border: 1px solid #ba1c68;
+    background-color: #ba1c68;
+  }
+
+  &-border {
+    @extend .button;
+    border: 1px solid #ba1c68;
+    color: #ba1c68;
+    background-color: #fff;
+  }
+}
