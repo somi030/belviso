@@ -16,7 +16,13 @@ require('./assets/styles/main.scss');
 
 require('./assets/scripts/components/header.js');
 require('./assets/scripts/components/slider.js');
+require('./assets/scripts/components/form.js');
+require('./assets/scripts/components/search.js');
 require('./assets/scripts/components/pricingList.js');
+require('./assets/scripts/components/sales.js');
+require('./assets/scripts/components/treatment.js');
+require('./assets/scripts/components/single-blog.js');
+require('./assets/scripts/components/services-list.js');
 // require('./assets/scripts/components/anchor.js');
 // require('./assets/scripts/components/showcase.js');
 // require('./assets/scripts/components/dropdown.js');

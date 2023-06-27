@@ -15,6 +15,26 @@ $acfBlocks = array();
 // );
 
 $acfBlocks[] = array(
+	'name'			=> 'form-block',
+	'title'			=> __('Form Block'),
+	'render_template'   => get_template_directory() . '/partials/form-block.php',
+	'category'		=> 'formatting',
+	'icon'			=> 'feedback',
+	'mode'			=> 'edit',
+	'keywords'		=> array('form', 'block')
+);
+
+$acfBlocks[] = array(
+	'name'			=> 'background-cta-block',
+	'title'			=> __('Background CTA Block'),
+	'render_template'   => get_template_directory() . '/partials/background-cta-block.php',
+	'category'		=> 'formatting',
+	'icon'			=> 'feedback',
+	'mode'			=> 'edit',
+	'keywords'		=> array('background', 'cta', 'block')
+);
+
+$acfBlocks[] = array(
 	'name'			=> 'hero',
 	'title'			=> __('Hero Block'),
 	'render_template'   => get_template_directory() . '/partials/hero-block.php',

@@ -5,6 +5,40 @@
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     overflow: hidden;
+    position: relative;
+  }
+
+  &__treatment-discount {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    border: 1px solid #ba1c68;
+  }
+
+  &__treatment-discount-text {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ba1c68;
+    background-color: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__treatment-discount-price {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    color: #ffffff;
+    background-color: #ba1c68;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   &__treatment-image {
@@ -17,6 +51,7 @@
   &__treatment-info {
     padding: 28px 31px 0;
     width: 100%;
+    position: relative;
   }
 
   &__treatment-header {
@@ -46,5 +81,96 @@
 
   &__more {
     margin-top: 40px;
+  }
+
+  &__treatment-duration {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 31px;
+    bottom: 50px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 20px;
+    color: #68103a;
+
+    svg {
+      margin-right: 10px;
+    }
+  }
+
+  &__treatment-read-more {
+    position: relative;
+    color: #ba1c68;
+    font-weight: 700;
+  }
+  .morecontent span {
+    display: none;
+  }
+}
+
+@media (max-width: breakpoint(md)) {
+  .treatments-list {
+    .page {
+      &__divider {
+        display: none;
+      }
+
+      &__title {
+        margin-bottom: 28px;
+        font-size: 22px;
+        line-height: 26px;
+      }
+
+      &__description {
+        margin-bottom: 34px;
+      }
+    }
+
+    &__treatment {
+      flex-direction: column;
+      height: calc(100% - 30px);
+      // max-height: 650px;
+      max-height: 100%;
+      // height: 100%;
+      // max-height: 50%;
+    }
+
+    &__treatment-discount-price {
+      font-size: 18px;
+      line-height: 21px;
+    }
+
+    &__treatment-header {
+      padding-bottom: 24px;
+    }
+
+    &__treatment-image {
+      min-width: 100%;
+      width: 100%;
+      max-width: 100%;
+      max-height: 205px;
+    }
+
+    &__treatment-logo {
+      display: none;
+    }
+
+    &__treatment-duration {
+      position: relative;
+      bottom: unset;
+      right: unset;
+      margin-top: 35px;
+      margin-bottom: 25px;
+    }
+
+    &__more {
+      margin-top: 25px;
+    }
+
+    &__treatment-description {
+      height: 100%;
+      display: block;
+    }
   }
 }

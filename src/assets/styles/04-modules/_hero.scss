@@ -23,3 +23,19 @@
     font-size: 24px;
   }
 }
+
+@media (max-width: breakpoint(md)) {
+  .hero {
+    min-height: 375px;
+    height: 30vh;
+
+    &__description {
+      display: none;
+    }
+
+    &__title {
+      margin-top: 80px;
+      margin-bottom: 0;
+    }
+  }
+}

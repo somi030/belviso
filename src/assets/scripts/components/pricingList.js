@@ -20,3 +20,16 @@ if (pricingListSection.length) {
         });
     });
 }
+
+const searchButtons = document.querySelectorAll('.pricing-list__category-search__button');
+searchButtons.forEach((button) => {
+    button.addEventListener('click', (event) => {
+        event.preventDefault();
+        let idFinder = button.closest('.row').querySelector('.id-finder');
+        let homeUrl = window.location.protocol + '//' + window.location.hostname + ':' + window.location.port + '/belviso/';
+        let urlWithoutSearch = homeUrl + 'zakazivanje';
+        let searchParams = new URLSearchParams({ treatment: idFinder.id });
+        let urlWithSearch = urlWithoutSearch + '?' + searchParams.toString();
+        window.location.href = urlWithSearch;
+    });
+});

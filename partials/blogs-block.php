@@ -37,7 +37,7 @@ $blogs = get_posts(array(
                         );
                         set_query_var('blogData', $blogData);
                         ?>
-                        <div class="col-6">
+                        <div class="col-sm-6 col-12">
                             <?php
                             get_template_part('partials/sub-partials/blog-block');
                             ?>

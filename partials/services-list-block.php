@@ -12,14 +12,15 @@ $services = get_field('services', 'options');
 ); ?>
 <div class="row">
     <?php foreach ($services as $service) { ?>
-        <div class="col-4">
+        <div class="col-md-4 col-sm-6 col-12">
             <div class="services-list__service">
                 <div class="services-list__service-image-container">
                     <img src="<?php echo $service['image']['url'] ?>" class="services-list__service-image" alt="<?php echo $service['image']['alt'] ?>" />
 
+                    <div class="services-list__service-name mobile"><?php echo $service['name'] ?></div>
                     <div class="services-list__service-buttons">
                         <a href="<?php echo $service['link'] ?>" class="services-list__service-details button-fill">Detaljnije o tretmanu</a>
-                        <a class="services-list__service-schedule button-border">Zakažite tretman</a>
+                        <a href="" class="services-list__service-schedule button-border">Zakažite tretman</a>
                     </div>
                 </div>
 

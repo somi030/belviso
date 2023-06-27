@@ -10,7 +10,7 @@ $sales = get_field('sales', 'options');
         'search'  => true
     )
 ); ?>
-<div class="row">
+<!-- <div class="row">
 
     <div class="col-12">
         <?php
@@ -28,5 +28,25 @@ $sales = get_field('sales', 'options');
             wp_reset_postdata();
         } ?>
     </div>
+</div> -->
+<div class="row">
+
+    <?php
+    if ($sales) {
+        foreach ($sales as $sale) { ?>
+            <div class="col-12">
+                <?php
+                $treatmentData = array(
+                    'treatment'    => $sale['treatment'],
+                    'image-size' => 'read-more'
+                );
+                set_query_var('treatmentData', $treatmentData);
+                get_template_part('partials/sub-partials/treatment-article-block');
+                ?>
+            </div>
+    <?php }
+        wp_reset_postdata();
+    } ?>
+
 </div>
 <?php get_template_part('partials/templates/page-end'); ?>

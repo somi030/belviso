@@ -7,13 +7,13 @@
     height: 100%;
   }
 
-  &__logo {
-    width: 300px;
-  }
-
   &__contact {
     font-size: 20px;
     line-height: 1.8;
+  }
+
+  &__contact-item span {
+    color: #fff !important;
   }
 
   &__map {
@@ -21,8 +21,61 @@
   }
 
   &__social-media {
-    svg {
-      margin-right: 15px;
+    a {
+      margin-right: 20px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: breakpoint(md)) {
+  .footer {
+    padding-top: 0;
+
+    .md-p-0 {
+      padding: 0;
+    }
+
+    .md-order-1 {
+      order: 1;
+    }
+
+    .md-order-2 {
+      order: 2;
+    }
+
+    &__logo {
+      width: 100%;
+      max-width: 200px;
+      object-fit: cover;
+    }
+
+    &__left {
+      align-items: center;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    &__contact {
+      margin-top: 30px;
+      margin-bottom: 40px;
+      line-height: 1.4;
+
+      &__item {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+    }
+
+    &__map {
+      height: 270px;
     }
   }
 }

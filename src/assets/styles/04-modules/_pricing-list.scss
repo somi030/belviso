@@ -65,6 +65,90 @@
 
     &:hover {
       background-color: #ba1c681f;
+
+      .pricing-list__category-search__button {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__category-search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__button {
+      font-size: 14px;
+      line-height: 16px;
+      padding: 9px 29px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease("fluid");
+    }
+  }
+}
+
+@media (max-width: breakpoint(sm)) {
+  .pricing-list {
+    padding-bottom: 70px;
+
+    .p-0-mobile {
+      padding: 0 !important;
+    }
+
+    .page {
+      &__title {
+        font-size: 22px;
+        line-height: 26px;
+      }
+
+      &__description {
+        margin-bottom: 40px;
+        // margin-top: 28px;
+      }
+
+      &__divider {
+        display: none;
+      }
+    }
+
+    &__category {
+      margin: 0 10px 10px;
+
+      &.open {
+        margin-bottom: 43px;
+      }
+    }
+
+    &__category-header {
+      padding: 25px 23px;
+    }
+
+    &__category-table-row {
+      padding: 15px 32px;
+    }
+
+    &__category-name {
+      font-size: 18px;
+      line-height: 21px;
+      color: #ba1c68;
+    }
+
+    &__category-search {
+      font-size: 15px;
+    }
+
+    &__category-search-price {
+      font-size: 15px;
+    }
+
+    &__dropdown-icon svg {
+      path {
+        fill: #ba1c68;
+      }
     }
   }
 }

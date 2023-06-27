@@ -22,18 +22,19 @@ $description = get_field('description');
         </div>
 
         <div class="sales__sales">
-            <div class="row">
+            <div class="row gap-25">
                 <?php
                 if ($sales) {
                     foreach ($sales as $sale) { ?>
                         <?php
                         $saleData = array(
                             'treatment'    => $sale['treatment'],
-                            'image-size' => 'read-more'
+                            'image-size' => 'read-more',
+                            'discount'     => $sale['discount']
                         );
                         set_query_var('saleData', $saleData);
                         ?>
-                        <div class="col-6">
+                        <div class="col-md-6 col-12">
                             <?php
                             get_template_part('partials/sub-partials/sale-block');
                             ?>

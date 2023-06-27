@@ -18,7 +18,7 @@ $rows = get_field('rows')
                                 <?php
                                 $images = $column['images'];
                                 ?>
-                                <div class="col-4">
+                                <div class="col-md-4 col-12">
                                     <?php foreach ($images as $image) { ?>
                                         <div class="gallery__image-container count-<?php echo count($images) ?>">
                                             <img src="<?php echo $image['url'] ?>" class="gallery__image" alt="<?php echo $image['alt'] ?>" />

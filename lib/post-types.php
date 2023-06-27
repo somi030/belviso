@@ -28,7 +28,7 @@ function createPostTypes()
 			'public' => true,
 			'has_archive' => false,
 			'rewrite' => array('slug' => 'tretman'),
-			'supports' => array('title', 'thumbnail', 'excerpt', 'page-attributes', 'tretman-kategorija'),
+			'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'page-attributes', 'tretman-kategorija'),
 		)
 	);
 }

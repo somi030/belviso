@@ -24,13 +24,12 @@ $treatments = get_posts(array(
         'search'  => true
     )
 ); ?>
+
 <div class="row">
-
-    <div class="col-12">
-        <?php
-        if ($treatments) {
-
-            foreach ($treatments as $treatment) { ?>
+    <?php
+    if ($treatments) {
+        foreach ($treatments as $treatment) { ?>
+            <div class="col-12"> <!-- Add a div wrapper here -->
                 <?php
                 $treatmentData = array(
                     'treatment'    => $treatment,
@@ -39,9 +38,10 @@ $treatments = get_posts(array(
                 set_query_var('treatmentData', $treatmentData);
                 get_template_part('partials/sub-partials/treatment-article-block');
                 ?>
-        <?php }
-            wp_reset_postdata();
-        } ?>
-    </div>
+            </div> <!-- Close the wrapper here -->
+    <?php }
+        wp_reset_postdata();
+    } ?>
 </div>
+
 <?php get_template_part('partials/templates/page-end'); ?>

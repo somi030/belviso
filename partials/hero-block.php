@@ -9,7 +9,7 @@ $description = get_field('description');
     <div class="container">
 
         <div class="row">
-            <div class="col-6">
+            <div class="col-md-6 col-12">
                 <h1 class="hero__title"><?php echo $title ?></h1>
                 <p class="hero__description"><?php echo $description ?></p>
             </div>

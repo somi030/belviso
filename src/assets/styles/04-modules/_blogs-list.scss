@@ -60,3 +60,54 @@
     padding-right: 43px;
   }
 }
+
+@media (max-width: breakpoint(md)) {
+  .blogs-list {
+    &__blog {
+      margin-bottom: 34px;
+      background-color: #ffffff;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+    }
+
+    &__blog-info {
+      padding: 10px 20px 34px;
+    }
+
+    &__blog-image {
+      height: 210px;
+      max-width: 100%;
+    }
+
+    &__blog-title {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+}
+
+@media (max-width: breakpoint(sm)) {
+  .blogs-list {
+    padding-bottom: 83px !important;
+    &__blog-more {
+      width: 100%;
+      text-align: center;
+    }
+
+    .page {
+      &__title {
+        font-size: 22px;
+        line-height: 26px;
+        margin-bottom: 28px;
+      }
+
+      &__divider {
+        display: none;
+      }
+
+      &__description {
+        margin-bottom: 42px;
+      }
+    }
+  }
+}

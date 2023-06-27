@@ -1,9 +1,28 @@
 {
-    "key": "group_630b2a1833210",
-    "title": "Contact Block",
+    "key": "group_6436c4360337c",
+    "title": "Form Block",
     "fields": [
         {
-            "key": "field_644a46b1350f2",
+            "key": "field_64957a7e9caae",
+            "label": "Form Title",
+            "name": "form_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Formular za Zakazivanje",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_64957a2bae55a",
             "label": "Form Shortcode",
             "name": "form_shortcode",
             "type": "text",
@@ -15,7 +34,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "[contact-form-7 id=\"480\" title=\"Belviso Contact Form\"]",
+            "default_value": "[contact-form-7 id=\"607\" title=\"Belviso Zakazivanje\"]",
             "placeholder": "",
             "prepend": "",
             "append": "",
@@ -27,7 +46,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/contact"
+                "value": "acf\/form-block"
             }
         ]
     ],
@@ -39,5 +58,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1682589375
+    "modified": 1687517918
 }

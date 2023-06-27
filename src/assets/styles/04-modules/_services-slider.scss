@@ -7,6 +7,13 @@
     height: 620px;
   }
 
+  &__title {
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 45px;
+    color: #181818;
+  }
+
   &__slider {
     padding: 20px 10px;
   }
@@ -72,5 +79,49 @@
 
   &__slide-schedule {
     margin-top: 23px;
+  }
+
+  &__arrow-right {
+    color: #ba1c68;
+    right: -30px;
+  }
+
+  &__arrow-left {
+    color: #ba1c68;
+    left: -30px;
+  }
+}
+
+@media (max-width: breakpoint(md)) {
+  .services-slider {
+    padding-top: 35px;
+    padding-bottom: 65px;
+
+    &__slider-container {
+      height: 600px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: none;
+    }
+
+    &__title {
+      font-size: 30px;
+      line-height: 35px;
+    }
+
+    &__subtitle {
+      font-size: 30px;
+      line-height: 36px;
+    }
+
+    &__slide-description {
+      margin-bottom: 0px;
+    }
+
+    &__slide-name {
+      margin-bottom: 20px;
+    }
   }
 }

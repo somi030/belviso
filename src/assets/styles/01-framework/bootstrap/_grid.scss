@@ -12,10 +12,10 @@
 
 $grid-breakpoints: (
   xs: 0,
-  sm: 640px,
-  md: 1150px,
-  lg: 1440px,
-  xl: 1660px,
+  sm: 576px,
+  md: 992px,
+  lg: 1280px,
+  xl: 1400px,
 ) !default;
 
 // Grid containers
@@ -25,7 +25,10 @@ $grid-breakpoints: (
 $container-max-widths: (
   // sm: 690px,
   // md: 1020px,
-  md: 1144px
+  sm: 850px,
+  md: 1060px,
+  lg: 1140px,
+  xl: 1140px
 ) !default;
 
 // Grid columns

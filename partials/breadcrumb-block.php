@@ -6,7 +6,7 @@ $links = get_field('links');
 
 <section class="breadcrumb d-flex flex-column justify-content-center" style="<?php defineBackgroundImage($image) ?>">
     <div class="breadcrumb__backdrop"></div>
-    <div class="container">
+    <div class="container d-none d-md-block">
 
         <div class="row">
             <div class="col-12">

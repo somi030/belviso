@@ -5,10 +5,14 @@
         'class'   => 'contact',
         'search'  => false
     )
-); ?>
+);
+
+$form = get_field("form_shortcode");
+?>
 
 <div class="row">
-    <div class="col-12">
+    <div class="col-12 p-0-mobile">
+        <?php echo do_shortcode($form); ?>
     </div>
 </div>
 

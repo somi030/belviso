@@ -1,13 +1,21 @@
 <?php get_header();
+global $post;
+// $data = get_query_var('treatmentData');
+// var_dump($data);
+// setup_postdata($post = $data['treatment']);
 $single_blog = get_field('single_blog', 'options');
-$image =  $single_blog['background_image'];
-$title =  $single_blog['breadcrumb_title'];
-$links = $single_blog['breadcrumb_links'];
+$treatment = get_field('single_treatment', 'options');
+$image =  $treatment['background_image'];
+$title =  $treatment['breadcrumb_title'];
+$links = $treatment['breadcrumb_links'];
+// $image =  $single_blog['background_image'];
+// $title =  $single_blog['breadcrumb_title'];
+// $links = $single_blog['breadcrumb_links'];
 ?>
 
 <section class="breadcrumb d-flex flex-column justify-content-center" style="<?php defineBackgroundImage($image) ?>">
     <div class="breadcrumb__backdrop"></div>
-    <div class="container">
+    <div class="container d-none d-md-block">
         <div class="row">
             <div class="col-12">
                 <h1 class="breadcrumb__title"><?php echo $title ?></h1>
@@ -29,7 +37,7 @@ $links = $single_blog['breadcrumb_links'];
         <div class="row">
             <div class="col-12">
                 <h1 class="single-blog__title"><?php echo esc_html(the_title()) ?></h1>
-                <div class="single-blog__date"><?php echo get_the_date('d/m/Y') ?></div>
+                <!-- <div class="single-blog__date"><?php echo get_the_date('d/m/Y') ?></div> -->
 
                 <div class="single-blog__split">
                     <div class="single-blog__split-line"></div>
@@ -42,6 +50,7 @@ $links = $single_blog['breadcrumb_links'];
                         the_post();
                         the_content();
                     } ?>
+                    <!-- <?php the_field('description', $post->ID) ?> -->
                 </div>
             </div>
         </div>

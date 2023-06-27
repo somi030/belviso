@@ -25,13 +25,17 @@ $services = get_field('services', 'options');
                                         <div class="services-slider__slide-name"><?php echo $service['name'] ?></div>
                                         <div class="services-slider__slide-description"><?php echo $service['description'] ?></div>
 
-                                        <a href="<?php echo $service['link'] ?>" class="services-slider__slide-details button-fill">Detaljnije o tretmanu</a>
-                                        <a class="services-slider__slide-schedule button-border">Zakažite tretman</a>
+                                        <a href="<?php echo $service['link'] ?>" class="services-slider__slide-details button-fill services-slider__slide__button">Detaljnije o tretmanu</a>
+                                        <a class="services-slider__slide-schedule button-border services-slider__slide__button">Zakažite tretman</a>
                                     </div>
                                 </div>
                             <?php } ?>
                         </div>
                     </div>
+
+                    <div class="swiper-button-prev services-slider__arrow-left"></div>
+                    <div class="swiper-button-next services-slider__arrow-right"></div>
+
                 </div>
 
             </div>

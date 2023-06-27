@@ -1,0 +1,23 @@
+.button-border {
+  transition: background-color 0.3s cubic-bezier(0.3, 0, 0.22, 1);
+  &:hover {
+    background-color: #ba1c68;
+    color: #fff;
+  }
+}
+
+.button {
+  transition: background-color 0.3s cubic-bezier(0.3, 0, 0.22, 1);
+  &:hover {
+    background-color: #ba1c68;
+    // border: 1px solid #ba1c68;
+  }
+}
+
+.button-fill {
+  transition: background-color 0.3s cubic-bezier(0.3, 0, 0.22, 1);
+  &:hover {
+    color: #ba1c68;
+    background-color: #fff;
+  }
+}

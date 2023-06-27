@@ -17,7 +17,7 @@ $blogs = get_posts(array(
 
 <section class="breadcrumb d-flex flex-column justify-content-center" style="<?php defineBackgroundImage($image) ?>">
     <div class="breadcrumb__backdrop"></div>
-    <div class="container">
+    <div class="container d-none d-md-block">
 
         <div class="row">
             <div class="col-12">
@@ -45,7 +45,7 @@ $blogs = get_posts(array(
         'class'   => 'blogs-list',
         'search'  => true,
         'title' => $title,
-        'description' => $description,
+        'description' =>  $description,
     )
 ); ?>
 <div class="row">

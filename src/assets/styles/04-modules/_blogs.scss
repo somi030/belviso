@@ -44,5 +44,53 @@
     font-weight: bold;
     color: #fff;
     padding: 20px 5px;
+    transition: background-color 0.3s cubic-bezier(0.3, 0, 0.22, 1);
+    border: 1px solid transparent;
+    &:hover {
+      color: #ba1c68;
+      background-color: #fff;
+      border: 1px solid #ba1c68;
+    }
+  }
+
+  &__blog-image {
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: breakpoint(md)) {
+  .blogs {
+    padding: 50px 0;
+    &__title {
+      font-size: 30px;
+      line-height: 35px;
+    }
+
+    &__subtitle {
+      font-size: 30px;
+      line-height: 36px;
+    }
+
+    &__blogs {
+      margin-top: 50px;
+    }
+
+    &__blog {
+      margin-bottom: 30px;
+    }
+
+    &__blog-description {
+      font-size: 16px;
+    }
+
+    &__blog-more {
+      padding: 14px 0;
+    }
+
+    &__blog-image {
+      min-height: 214px;
+    }
   }
 }
